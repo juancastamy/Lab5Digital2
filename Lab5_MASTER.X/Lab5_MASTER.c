@@ -36,9 +36,70 @@
 #include <xc.h>
 #include <pic16f887.h>
 #include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "LCD.h"
 #include "I2C_MASTER.h"
+#include "OSCILADOR.h"
 
+uint8_t ADC;
+float voltaje;
+int V1;
+int POT1A;
+int POT1B;
+int POT1C;
+char POT1SA[5];
+char POT1SB[5];
+char POT1SC[5];
+char PUNTO1[5];
+
+void SETUP(void);
 void main(void) {
+    SETUP();
+    initOsc(6);
     I2C_INIT(100000);
-    return;
+    lcd_msg("ADC  CONT.  FOTO.");
+    while(1){
+        I2C_Master_Start();         //Start condition
+        I2C_Master_Write(0x21);     //7 bit address + Read
+        ADC = I2C_Master_Read(0); //Read + Acknowledge
+        I2C_Master_Stop();          //Stop condition
+        __delay_ms(200);
+        voltaje = (ADC*5.0)/255.0;
+        V1 = (voltaje)*100;
+        POT1A = V1%10;
+        itoa(POT1SA,POT1A,10);
+        POT1B = (V1/10)%10;
+        itoa(POT1SB,POT1B,10);
+        POT1C = (V1/100)%10;
+        itoa(POT1SC,POT1C,10);
+        strcat(POT1SB,POT1SA);
+        strcpy(PUNTO1,".");
+        strcat(PUNTO1,POT1SB);
+        strcat(POT1SC,PUNTO1);
+        lcd_cmd(0xC0); 
+        lcd_msg(POT1SC);
+        
+        
+        
+//        __delay_ms(200);
+//        I2C_Master_Start();         //Start condition
+//        I2C_Master_Write(0x31);     //7 bit address + Read
+//        ADC = I2C_Master_Read(0); //Read + Acknowledge
+//        I2C_Master_Stop();          //Stop condition
+//        __delay_ms(200);
+    }
+}
+void SETUP (void){
+    TRISA=0;
+    TRISB=0;
+    TRISC=0b000011000;
+    TRISD=0;
+    TRISE=0;
+    PORTA=0;
+    PORTB=0;
+    PORTC=0;
+    PORTD=0;
+    PORTE=0;
 }
