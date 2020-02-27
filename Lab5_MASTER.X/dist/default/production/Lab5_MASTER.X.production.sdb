@@ -49,9 +49,9 @@
 [v _I2C_Master_Write I2C_Master_Write `(v  1 e 1 0 ]
 "49
 [v _I2C_Master_Read I2C_Master_Read `(us  1 e 2 0 ]
-"60 C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+"72 C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
 [v _main main `(v  1 e 1 0 ]
-"106
+"134
 [v _SETUP SETUP `(v  1 e 1 0 ]
 "5 C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
 [v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
@@ -103,20 +103,20 @@
 [v _TRISD TRISD `VEuc  1 e 1 @136 ]
 "1664
 [v _TRISE TRISE `VEuc  1 e 1 @137 ]
-[s S195 . 1 `uc 1 SCS 1 0 :1:0 
+[s S208 . 1 `uc 1 SCS 1 0 :1:0 
 `uc 1 LTS 1 0 :1:1 
 `uc 1 HTS 1 0 :1:2 
 `uc 1 OSTS 1 0 :1:3 
 `uc 1 IRCF 1 0 :3:4 
 ]
 "1882
-[s S201 . 1 `uc 1 . 1 0 :4:0 
+[s S214 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 IRCF0 1 0 :1:4 
 `uc 1 IRCF1 1 0 :1:5 
 `uc 1 IRCF2 1 0 :1:6 
 ]
-[u S206 . 1 `S195 1 . 1 0 `S201 1 . 1 0 ]
-[v _OSCCONbits OSCCONbits `VES206  1 e 1 @143 ]
+[u S219 . 1 `S208 1 . 1 0 `S214 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES219  1 e 1 @143 ]
 "1979
 [v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
 [s S47 . 1 `uc 1 SEN 1 0 :1:0 
@@ -179,22 +179,42 @@
 [v _contador contador `i  1 e 2 0 ]
 "57
 [v _resultado resultado `[5]uc  1 e 5 0 ]
+"59
+[v _ADC2 ADC2 `uc  1 e 1 0 ]
 "60
+[v _voltaje2 voltaje2 `f  1 e 4 0 ]
+"61
+[v _V2 V2 `i  1 e 2 0 ]
+"62
+[v _POT2A POT2A `i  1 e 2 0 ]
+"63
+[v _POT2B POT2B `i  1 e 2 0 ]
+"64
+[v _POT2C POT2C `i  1 e 2 0 ]
+"65
+[v _POT2SA POT2SA `[5]uc  1 e 5 0 ]
+"66
+[v _POT2SB POT2SB `[5]uc  1 e 5 0 ]
+"67
+[v _POT2SC POT2SC `[5]uc  1 e 5 0 ]
+"68
+[v _PUNTO2 PUNTO2 `[5]uc  1 e 5 0 ]
+"72
 [v _main main `(v  1 e 1 0 ]
 {
-"105
+"133
 } 0
 "8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
 [v _strcpy strcpy `(*.4uc  1 e 1 0 ]
 {
 [v strcpy@to to `*.4uc  1 a 1 wreg ]
 "15
-[v strcpy@cp cp `*.4uc  1 a 1 3 ]
+[v strcpy@cp cp `*.4uc  1 a 1 2 ]
 "8
 [v strcpy@to to `*.4uc  1 a 1 wreg ]
 [v strcpy@from from `*.24DCuc  1 p 1 0 ]
 "18
-[v strcpy@to to `*.4uc  1 a 1 2 ]
+[v strcpy@to to `*.4uc  1 a 1 3 ]
 "24
 } 0
 "8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
@@ -202,12 +222,12 @@
 {
 [v strcat@to to `*.4uc  1 a 1 wreg ]
 "15
-[v strcat@cp cp `*.4uc  1 a 1 3 ]
+[v strcat@cp cp `*.4uc  1 a 1 2 ]
 "8
 [v strcat@to to `*.4uc  1 a 1 wreg ]
 [v strcat@from from `*.4DCuc  1 p 1 0 ]
 "18
-[v strcat@to to `*.4uc  1 a 1 2 ]
+[v strcat@to to `*.4uc  1 a 1 3 ]
 "26
 } 0
 "43 C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
@@ -331,17 +351,17 @@
 "8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S550 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S563 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S555 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S558 . 4 `l 1 i 4 0 `d 1 f 4 0 `S550 1 fAsBytes 4 0 `S555 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S558  1 a 4 20 ]
+[s S568 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S571 . 4 `l 1 i 4 0 `d 1 f 4 0 `S563 1 fAsBytes 4 0 `S568 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S571  1 a 4 20 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 14 ]
-[s S627 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S640 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S630 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S627 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S630  1 a 2 24 ]
+[u S643 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S640 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S643  1 a 2 24 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 19 ]
 "11
@@ -411,10 +431,10 @@
 [v ___awdiv@dividend dividend `i  1 p 2 2 ]
 "41
 } 0
-"106 C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+"134 C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
 [v _SETUP SETUP `(v  1 e 1 0 ]
 {
-"118
+"146
 } 0
 "3 C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
 [v _I2C_INIT I2C_INIT `(v  1 e 1 0 ]

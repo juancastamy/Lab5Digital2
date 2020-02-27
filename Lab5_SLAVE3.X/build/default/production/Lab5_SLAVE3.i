@@ -2723,9 +2723,13 @@ void main(void) {
       if (PORTAbits.RA0==1){
           BOT1 = 1;
       }
-      if (PORTAbits.RA0 == 0 && BOT1==1 && contador <0b00001111){
+      if (PORTAbits.RA0 == 0 && BOT1==1 && contador <0b0001111 ){
          contador++;
          BOT1 = 0;
+      }
+      if (contador == 0b00001111 && BOT1==1 && PORTAbits.RA0 == 0){
+          contador = 0;
+          BOT1=0;
       }
       if (PORTAbits.RA3 == 1){
           BOT2 = 1;
@@ -2733,6 +2737,10 @@ void main(void) {
       if (PORTAbits.RA3 == 0 && BOT2==1 && contador > 0b00000000){
           contador--;
           BOT2 = 0;
+      }
+      if (contador == 0b00000000 && BOT2==1 && PORTAbits.RA3 == 0 ){
+          contador = 0b00001111;
+          BOT2=0;
       }
       PORTB = contador;
   }

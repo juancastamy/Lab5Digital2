@@ -56,6 +56,18 @@ char PUNTO1[5];
 int contador;
 char resultado[5];
 
+uint8_t ADC2;
+float voltaje2;
+int V2;
+int POT2A;
+int POT2B;
+int POT2C;
+char POT2SA[5];
+char POT2SB[5];
+char POT2SC[5];
+char PUNTO2[5];
+char resultado2[5];
+
 void SETUP(void);
 void main(void) {
     SETUP();
@@ -85,6 +97,9 @@ void main(void) {
         lcd_msg(POT1SC);
         lcd_msg(" ");
         lcd_msg(resultado);
+        lcd_msg("   "); 
+        lcd_msg(POT2SC);
+        
         
         I2C_Master_Start();         //Start condition
         I2C_Master_Write(0x31);     //7 bit address + Read
@@ -95,12 +110,25 @@ void main(void) {
         
         
         
-//        __delay_ms(200);
-//        I2C_Master_Start();         //Start condition
-//        I2C_Master_Write(0x31);     //7 bit address + Read
-//        ADC = I2C_Master_Read(0); //Read + Acknowledge
-//        I2C_Master_Stop();          //Stop condition
-//        __delay_ms(200);
+        __delay_ms(200);
+        I2C_Master_Start();         //Start condition
+        I2C_Master_Write(0x41);     //7 bit address + Read
+        ADC2 = I2C_Master_Read(0); //Read + Acknowledge
+        I2C_Master_Stop();          //Stop condition
+        __delay_ms(200);
+        voltaje2 = (ADC2*5.0)/255.0;
+        V2 = (voltaje2)*100;
+        POT2A = V2%10;
+        itoa(POT2SA,POT2A,10);
+        POT2B = (V2/10)%10;
+        itoa(POT2SB,POT2B,10);
+        POT2C = (V2/100)%10;
+        itoa(POT2SC,POT2C,10);
+        strcat(POT2SB,POT2SA);
+        strcpy(PUNTO2,".");
+        strcat(PUNTO2,POT2SB);
+        strcat(POT2SC,PUNTO2);
+        
     }
 }
 void SETUP (void){
