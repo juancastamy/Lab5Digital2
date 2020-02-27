@@ -1,4 +1,4 @@
-# 1 "Lab5_MASTER.c"
+# 1 "Lab5_SLAVE2.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "Lab5_MASTER.c" 2
-# 16 "Lab5_MASTER.c"
+# 1 "Lab5_SLAVE2.c" 2
+# 16 "Lab5_SLAVE2.c"
 #pragma config FOSC = INTRC_NOCLKOUT
 #pragma config WDTE = OFF
 #pragma config PWRTE = OFF
@@ -22,8 +22,6 @@
 
 #pragma config BOR4V = BOR40V
 #pragma config WRT = OFF
-
-
 
 
 
@@ -2513,9 +2511,10 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 27 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\xc.h" 2 3
-# 36 "Lab5_MASTER.c" 2
+# 34 "Lab5_SLAVE2.c" 2
 
-
+# 1 "./I2C_SLAVE2.h" 1
+# 38 "./I2C_SLAVE2.h"
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c90\\stdint.h" 1 3
 # 13 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c90\\stdint.h" 3
 typedef signed char int8_t;
@@ -2649,7 +2648,24 @@ typedef int16_t intptr_t;
 
 
 typedef uint16_t uintptr_t;
-# 38 "Lab5_MASTER.c" 2
+# 38 "./I2C_SLAVE2.h" 2
+
+
+
+void I2C_Master_Init(const unsigned long c);
+void I2C_Master_Wait();
+void I2C_Master_Start();
+void I2C_Master_RepeatedStart();
+void I2C_Master_Stop();
+void I2C_Master_Write(unsigned d);
+unsigned short I2C_Master_Read(unsigned short a);
+void I2C_Slave_Init(uint8_t address);
+# 35 "Lab5_SLAVE2.c" 2
+
+# 1 "./ADC.h" 1
+# 38 "./ADC.h"
+# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c90\\stdint.h" 1 3
+# 38 "./ADC.h" 2
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c90\\stdio.h" 1 3
 
@@ -2748,7 +2764,7 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 #pragma printf_check(sprintf) const
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
-# 39 "Lab5_MASTER.c" 2
+# 39 "./ADC.h" 2
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c90\\stdlib.h" 1 3
 
@@ -2833,7 +2849,7 @@ extern char * ltoa(char * buf, long val, int base);
 extern char * ultoa(char * buf, unsigned long val, int base);
 
 extern char * ftoa(float f, int * status);
-# 40 "Lab5_MASTER.c" 2
+# 40 "./ADC.h" 2
 
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c90\\string.h" 1 3
 # 14 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c90\\string.h" 3
@@ -2866,37 +2882,16 @@ extern char * strchr(const char *, int);
 extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
-# 41 "Lab5_MASTER.c" 2
-
-# 1 "./LCD.h" 1
-# 55 "./LCD.h"
-void lcd_cmd(unsigned char x);
-void lcd_dwr(unsigned char x);
-void lcd_msg(unsigned char *c);
-void lcd_ready(void);
-void lcd_lat(void);
-void lcd_init(void);
-# 42 "Lab5_MASTER.c" 2
-
-# 1 "./I2C_MASTER.h" 1
-# 38 "./I2C_MASTER.h"
-# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c90\\stdint.h" 1 3
-# 38 "./I2C_MASTER.h" 2
+# 41 "./ADC.h" 2
 
 
+uint8_t adc;
 
-void I2C_INIT(const unsigned long c);
-void I2C_Master_Wait();
-void I2C_Master_Start();
-void I2C_Master_RepeatedStart();
-void I2C_Master_Stop();
-void I2C_Master_Write(unsigned d);
-unsigned short I2C_Master_Read(unsigned short a);
-void I2C_Slave_Init(uint8_t address);
-# 43 "Lab5_MASTER.c" 2
+void ADC1(void);
+# 36 "Lab5_SLAVE2.c" 2
 
-# 1 "./OSCILADOR.h" 1
-# 34 "./OSCILADOR.h"
+# 1 "./OSCI..h" 1
+# 34 "./OSCI..h"
 #pragma config FOSC = INTRC_NOCLKOUT
 
 
@@ -2906,60 +2901,66 @@ void I2C_Slave_Init(uint8_t address);
 
 
 void initOsc(uint8_t frec);
-# 44 "Lab5_MASTER.c" 2
+# 37 "Lab5_SLAVE2.c" 2
 
-
-uint8_t ADC;
-float voltaje;
-int V1;
-int POT1A;
-int POT1B;
-int POT1C;
-char POT1SA[5];
-char POT1SB[5];
-char POT1SC[5];
-char PUNTO1[5];
-
+uint8_t z;
 void SETUP(void);
+
+void __attribute__((picinterrupt(("")))) isr(void){
+   if(PIR1bits.SSPIF == 1){
+
+        SSPCONbits.CKP = 0;
+
+        if ((SSPCONbits.SSPOV) || (SSPCONbits.WCOL)){
+            z = SSPBUF;
+            SSPCONbits.SSPOV = 0;
+            SSPCONbits.WCOL = 0;
+            SSPCONbits.CKP = 1;
+        }
+
+        if(!SSPSTATbits.D_nA && !SSPSTATbits.R_nW) {
+
+            z = SSPBUF;
+
+            PIR1bits.SSPIF = 0;
+            SSPCONbits.CKP = 1;
+            while(!SSPSTATbits.BF);
+            PORTD = SSPBUF;
+            _delay((unsigned long)((250)*(4000000/4000000.0)));
+
+        }else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){
+            z = SSPBUF;
+            BF = 0;
+            SSPBUF = PORTB;
+            SSPCONbits.CKP = 1;
+            _delay((unsigned long)((250)*(4000000/4000000.0)));
+            while(SSPSTATbits.BF);
+        }
+
+        PIR1bits.SSPIF = 0;
+    }
+}
+
 void main(void) {
     SETUP();
     initOsc(6);
-    lcd_init();
-
-    lcd_msg("ADC  CONT.  FOTO.");
-    while(1){
-        I2C_Master_Start();
-        I2C_Master_Write(0x21);
-        ADC = I2C_Master_Read(0);
-        I2C_Master_Stop();
-        _delay((unsigned long)((200)*(4000000/4000.0)));
-        voltaje = (ADC*5.0)/255.0;
-        V1 = (voltaje)*100;
-        POT1A = V1%10;
-        itoa(POT1SA,POT1A,10);
-        POT1B = (V1/10)%10;
-        itoa(POT1SB,POT1B,10);
-        POT1C = (V1/100)%10;
-        itoa(POT1SC,POT1C,10);
-        strcat(POT1SB,POT1SA);
-        strcpy(PUNTO1,".");
-        strcat(PUNTO1,POT1SB);
-        strcat(POT1SC,PUNTO1);
-        lcd_cmd(0xC0);
-        lcd_msg(POT1SC);
-# 93 "Lab5_MASTER.c"
-    }
+  while(1){
+      ADC1();
+  }
 }
-void SETUP (void){
-    TRISA=0;
-    TRISB=0;
-    TRISC=0b000011000;
-    TRISD=0;
-    TRISE=0;
-    PORTA=0;
-    PORTB=0;
-    PORTC=0;
-    PORTD=0;
-    PORTE=0;
-    I2C_INIT(100000);
+
+void SETUP(void){
+    TRISA = 0b00000001;
+    TRISB = 0;
+    TRISC = 0b00011000;
+    TRISD = 0;
+    TRISE = 0;
+    ANSEL = 0b00000001;
+    ANSELH = 0;
+    PORTB = 0;
+    PORTC = 0;
+    PORTD = 0;
+    PORTE = 0;
+    PORTA = 0;
+    I2C_Slave_Init(0x20);
 }

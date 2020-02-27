@@ -4,9 +4,9 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>I2C_MASTER.h</itemPath>
-      <itemPath>OSCILADOR.h</itemPath>
-      <itemPath>LCD.h</itemPath>
+      <itemPath>I2C_SLAVE2.h</itemPath>
+      <itemPath>ADC.h</itemPath>
+      <itemPath>OSCI..h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -15,10 +15,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>I2C_MASTER.c</itemPath>
-      <itemPath>Lab5_MASTER.c</itemPath>
-      <itemPath>OSCILADOR.c</itemPath>
-      <itemPath>LCD.c</itemPath>
+      <itemPath>I2C_SLAVE2.c</itemPath>
+      <itemPath>Lab5_SLAVE2.c</itemPath>
+      <itemPath>ADC.c</itemPath>
+      <itemPath>OSCI..c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

@@ -1,101 +1,19 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[p mainexit ]
-"57 Lab5_MASTER.c
-[; ;Lab5_MASTER.c: 57: void SETUP(void);
-[v _SETUP `(v ~T0 @X0 0 ef ]
-"42 ./OSCILADOR.h
-[v _initOsc `(v ~T0 @X0 0 ef1`uc ]
-"60 ./LCD.h
-[; ;./LCD.h: 60: void lcd_init(void);
-[v _lcd_init `(v ~T0 @X0 0 ef ]
-"57
-[; ;./LCD.h: 57: void lcd_msg(unsigned char *c);
-[v _lcd_msg `(v ~T0 @X0 0 ef1`*uc ]
-"43 ./I2C_MASTER.h
-[; ;./I2C_MASTER.h: 43: void I2C_Master_Start();
-[v _I2C_Master_Start `(v ~T0 @X0 0 e? ]
-"46
-[; ;./I2C_MASTER.h: 46: void I2C_Master_Write(unsigned d);
-[v _I2C_Master_Write `(v ~T0 @X0 0 ef1`ui ]
-"47
-[; ;./I2C_MASTER.h: 47: unsigned short I2C_Master_Read(unsigned short a);
-[v _I2C_Master_Read `(us ~T0 @X0 0 ef1`us ]
-"45
-[; ;./I2C_MASTER.h: 45: void I2C_Master_Stop();
-[v _I2C_Master_Stop `(v ~T0 @X0 0 e? ]
-[v F1256 `(v ~T0 @X0 1 tf1`ul ]
-"92 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic.h
-[v __delay `JF1256 ~T0 @X0 0 e ]
-[p i __delay ]
-"113 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\stdlib.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\stdlib.h: 113: extern char * itoa(char * buf, int val, int base);
-[v _itoa `(*uc ~T0 @X0 0 ef3`*uc`i`i ]
-"36 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\string.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\string.h: 36: extern char * strcat(char *, const char *);
-[v _strcat `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
-"37
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\string.h: 37: extern char * strcpy(char *, const char *);
-[v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
-"55 ./LCD.h
-[; ;./LCD.h: 55: void lcd_cmd(unsigned char x);
-[v _lcd_cmd `(v ~T0 @X0 0 ef1`uc ]
-"1416 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 1416: extern volatile unsigned char TRISA __attribute__((address(0x085)));
-[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
-"1478
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 1478: extern volatile unsigned char TRISB __attribute__((address(0x086)));
-[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
-"1540
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 1540: extern volatile unsigned char TRISC __attribute__((address(0x087)));
-[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
-"1602
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 1602: extern volatile unsigned char TRISD __attribute__((address(0x088)));
-[v _TRISD `Vuc ~T0 @X0 0 e@136 ]
-"1664
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 1664: extern volatile unsigned char TRISE __attribute__((address(0x089)));
-[v _TRISE `Vuc ~T0 @X0 0 e@137 ]
-"166
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 166: extern volatile unsigned char PORTA __attribute__((address(0x005)));
-[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
-"228
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 228: extern volatile unsigned char PORTB __attribute__((address(0x006)));
-[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
-"290
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 290: extern volatile unsigned char PORTC __attribute__((address(0x007)));
-[v _PORTC `Vuc ~T0 @X0 0 e@7 ]
-"352
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 352: extern volatile unsigned char PORTD __attribute__((address(0x008)));
-[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
-"414
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 414: extern volatile unsigned char PORTE __attribute__((address(0x009)));
-[v _PORTE `Vuc ~T0 @X0 0 e@9 ]
-"41 ./I2C_MASTER.h
-[; ;./I2C_MASTER.h: 41: void I2C_INIT(const unsigned long c);
-[v _I2C_INIT `(v ~T0 @X0 0 ef1`Cul ]
-"16 Lab5_MASTER.c
-[p x FOSC = INTRC_NOCLKOUT ]
-"17
-[p x WDTE = OFF ]
-"18
-[p x PWRTE = OFF ]
-"19
-[p x MCLRE = OFF ]
-"20
-[p x CP = OFF ]
-"21
-[p x CPD = OFF ]
-"22
-[p x BOREN = OFF ]
-"23
-[p x IESO = OFF ]
-"24
-[p x FCMEN = OFF ]
-"25
-[p x LVP = OFF ]
-"28
-[p x BOR4V = BOR40V ]
-"29
-[p x WRT = OFF ]
+"1868 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 1868:     struct {
+[s S70 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 ]
+[n S70 . SCS LTS HTS OSTS IRCF ]
+"1875
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 1875:     struct {
+[s S71 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S71 . . IRCF0 IRCF1 IRCF2 ]
+"1867
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 1867: typedef union {
+[u S69 `S70 1 `S71 1 ]
+[n S69 . . . ]
+"1882
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 1882: extern volatile OSCCONbits_t OSCCONbits __attribute__((address(0x08F)));
+[v _OSCCONbits `VS69 ~T0 @X0 0 e@143 ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -330,170 +248,173 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3546
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f887.h: 3546: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"34 ./OSCILADOR.h
+"34 ./OSCI..h
 [p x FOSC = INTRC_NOCLKOUT ]
-"46 Lab5_MASTER.c
-[; ;Lab5_MASTER.c: 46: uint8_t ADC;
-[v _ADC `uc ~T0 @X0 1 e ]
-"47
-[; ;Lab5_MASTER.c: 47: float voltaje;
-[v _voltaje `f ~T0 @X0 1 e ]
-"48
-[; ;Lab5_MASTER.c: 48: int V1;
-[v _V1 `i ~T0 @X0 1 e ]
-"49
-[; ;Lab5_MASTER.c: 49: int POT1A;
-[v _POT1A `i ~T0 @X0 1 e ]
-"50
-[; ;Lab5_MASTER.c: 50: int POT1B;
-[v _POT1B `i ~T0 @X0 1 e ]
-"51
-[; ;Lab5_MASTER.c: 51: int POT1C;
-[v _POT1C `i ~T0 @X0 1 e ]
-"52
-[; ;Lab5_MASTER.c: 52: char POT1SA[5];
-[v _POT1SA `uc ~T0 @X0 -> 5 `i e ]
-"53
-[; ;Lab5_MASTER.c: 53: char POT1SB[5];
-[v _POT1SB `uc ~T0 @X0 -> 5 `i e ]
-"54
-[; ;Lab5_MASTER.c: 54: char POT1SC[5];
-[v _POT1SC `uc ~T0 @X0 -> 5 `i e ]
-"55
-[; ;Lab5_MASTER.c: 55: char PUNTO1[5];
-[v _PUNTO1 `uc ~T0 @X0 -> 5 `i e ]
-[v $root$_main `(v ~T0 @X0 0 e ]
-"58
-[; ;Lab5_MASTER.c: 58: void main(void) {
-[v _main `(v ~T0 @X0 1 ef ]
+"9 OSCI..c
+[; ;OSCI..c: 9: void initOsc(uint8_t frec){
+[v _initOsc `(v ~T0 @X0 1 ef1`uc ]
 {
-[e :U _main ]
+[e :U _initOsc ]
+[v _frec `uc ~T0 @X0 1 r1 ]
 [f ]
-"59
-[; ;Lab5_MASTER.c: 59:     SETUP();
-[e ( _SETUP ..  ]
-"60
-[; ;Lab5_MASTER.c: 60:     initOsc(6);
-[e ( _initOsc (1 -> -> 6 `i `uc ]
-"61
-[; ;Lab5_MASTER.c: 61:     lcd_init();
-[e ( _lcd_init ..  ]
-"63
-[; ;Lab5_MASTER.c: 63:     lcd_msg("ADC  CONT.  FOTO.");
-[e ( _lcd_msg (1 :s 1C ]
-"64
-[; ;Lab5_MASTER.c: 64:     while(1){
-[e :U 145 ]
+"10
+[; ;OSCI..c: 10:     switch(frec){
+[e $U 140  ]
 {
-"65
-[; ;Lab5_MASTER.c: 65:         I2C_Master_Start();
-[e ( _I2C_Master_Start ..  ]
-"66
-[; ;Lab5_MASTER.c: 66:         I2C_Master_Write(0x21);
-[e ( _I2C_Master_Write (1 -> -> 33 `i `ui ]
-"67
-[; ;Lab5_MASTER.c: 67:         ADC = I2C_Master_Read(0);
-[e = _ADC -> ( _I2C_Master_Read (1 -> -> 0 `i `us `uc ]
-"68
-[; ;Lab5_MASTER.c: 68:         I2C_Master_Stop();
-[e ( _I2C_Master_Stop ..  ]
-"69
-[; ;Lab5_MASTER.c: 69:         _delay((unsigned long)((200)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"70
-[; ;Lab5_MASTER.c: 70:         voltaje = (ADC*5.0)/255.0;
-[e = _voltaje -> / * -> -> _ADC `i `d .5.0 .255.0 `f ]
-"71
-[; ;Lab5_MASTER.c: 71:         V1 = (voltaje)*100;
-[e = _V1 -> * _voltaje -> -> 100 `i `f `i ]
-"72
-[; ;Lab5_MASTER.c: 72:         POT1A = V1%10;
-[e = _POT1A % _V1 -> 10 `i ]
-"73
-[; ;Lab5_MASTER.c: 73:         itoa(POT1SA,POT1A,10);
-[e ( _itoa (3 , , &U _POT1SA _POT1A -> 10 `i ]
-"74
-[; ;Lab5_MASTER.c: 74:         POT1B = (V1/10)%10;
-[e = _POT1B % / _V1 -> 10 `i -> 10 `i ]
-"75
-[; ;Lab5_MASTER.c: 75:         itoa(POT1SB,POT1B,10);
-[e ( _itoa (3 , , &U _POT1SB _POT1B -> 10 `i ]
-"76
-[; ;Lab5_MASTER.c: 76:         POT1C = (V1/100)%10;
-[e = _POT1C % / _V1 -> 100 `i -> 10 `i ]
-"77
-[; ;Lab5_MASTER.c: 77:         itoa(POT1SC,POT1C,10);
-[e ( _itoa (3 , , &U _POT1SC _POT1C -> 10 `i ]
-"78
-[; ;Lab5_MASTER.c: 78:         strcat(POT1SB,POT1SA);
-[e ( _strcat (2 , &U _POT1SB -> &U _POT1SA `*Cuc ]
-"79
-[; ;Lab5_MASTER.c: 79:         strcpy(PUNTO1,".");
-[e ( _strcpy (2 , &U _PUNTO1 :s 2C ]
-"80
-[; ;Lab5_MASTER.c: 80:         strcat(PUNTO1,POT1SB);
-[e ( _strcat (2 , &U _PUNTO1 -> &U _POT1SB `*Cuc ]
-"81
-[; ;Lab5_MASTER.c: 81:         strcat(POT1SC,PUNTO1);
-[e ( _strcat (2 , &U _POT1SC -> &U _PUNTO1 `*Cuc ]
-"82
-[; ;Lab5_MASTER.c: 82:         lcd_cmd(0xC0);
-[e ( _lcd_cmd (1 -> -> 192 `i `uc ]
-"83
-[; ;Lab5_MASTER.c: 83:         lcd_msg(POT1SC);
-[e ( _lcd_msg (1 -> &U _POT1SC `*uc ]
-"93
-[; ;Lab5_MASTER.c: 93:     }
-}
+"11
+[; ;OSCI..c: 11:         case 0:
+[e :U 141 ]
+"12
+[; ;OSCI..c: 12:             OSCCONbits.IRCF0 = 0;
+[e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
+"13
+[; ;OSCI..c: 13:             OSCCONbits.IRCF1 = 0;
+[e = . . _OSCCONbits 1 2 -> -> 0 `i `uc ]
+"14
+[; ;OSCI..c: 14:             OSCCONbits.IRCF2 = 0;
+[e = . . _OSCCONbits 1 3 -> -> 0 `i `uc ]
+"15
+[; ;OSCI..c: 15:             break;
+[e $U 139  ]
+"16
+[; ;OSCI..c: 16:         case 1:
+[e :U 142 ]
+"17
+[; ;OSCI..c: 17:             OSCCONbits.IRCF0 = 1;
+[e = . . _OSCCONbits 1 1 -> -> 1 `i `uc ]
+"18
+[; ;OSCI..c: 18:             OSCCONbits.IRCF1 = 0;
+[e = . . _OSCCONbits 1 2 -> -> 0 `i `uc ]
+"19
+[; ;OSCI..c: 19:             OSCCONbits.IRCF2 = 0;
+[e = . . _OSCCONbits 1 3 -> -> 0 `i `uc ]
+"20
+[; ;OSCI..c: 20:             break;
+[e $U 139  ]
+"21
+[; ;OSCI..c: 21:         case 2:
+[e :U 143 ]
+"22
+[; ;OSCI..c: 22:             OSCCONbits.IRCF0 = 0;
+[e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
+"23
+[; ;OSCI..c: 23:             OSCCONbits.IRCF1 = 1;
+[e = . . _OSCCONbits 1 2 -> -> 1 `i `uc ]
+"24
+[; ;OSCI..c: 24:             OSCCONbits.IRCF2 = 0;
+[e = . . _OSCCONbits 1 3 -> -> 0 `i `uc ]
+"25
+[; ;OSCI..c: 25:             break;
+[e $U 139  ]
+"26
+[; ;OSCI..c: 26:         case 3:
 [e :U 144 ]
-[e $U 145  ]
+"27
+[; ;OSCI..c: 27:             OSCCONbits.IRCF0 = 1;
+[e = . . _OSCCONbits 1 1 -> -> 1 `i `uc ]
+"28
+[; ;OSCI..c: 28:             OSCCONbits.IRCF1 = 1;
+[e = . . _OSCCONbits 1 2 -> -> 1 `i `uc ]
+"29
+[; ;OSCI..c: 29:             OSCCONbits.IRCF2 = 0;
+[e = . . _OSCCONbits 1 3 -> -> 0 `i `uc ]
+"30
+[; ;OSCI..c: 30:             break;
+[e $U 139  ]
+"31
+[; ;OSCI..c: 31:         case 4:
+[e :U 145 ]
+"32
+[; ;OSCI..c: 32:             OSCCONbits.IRCF0 = 0;
+[e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
+"33
+[; ;OSCI..c: 33:             OSCCONbits.IRCF1 = 0;
+[e = . . _OSCCONbits 1 2 -> -> 0 `i `uc ]
+"34
+[; ;OSCI..c: 34:             OSCCONbits.IRCF2 = 1;
+[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
+"35
+[; ;OSCI..c: 35:             break;
+[e $U 139  ]
+"36
+[; ;OSCI..c: 36:         case 5:
 [e :U 146 ]
-"94
-[; ;Lab5_MASTER.c: 94: }
-[e :UE 143 ]
+"37
+[; ;OSCI..c: 37:             OSCCONbits.IRCF0 = 1;
+[e = . . _OSCCONbits 1 1 -> -> 1 `i `uc ]
+"38
+[; ;OSCI..c: 38:             OSCCONbits.IRCF1 = 0;
+[e = . . _OSCCONbits 1 2 -> -> 0 `i `uc ]
+"39
+[; ;OSCI..c: 39:             OSCCONbits.IRCF2 = 1;
+[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
+"40
+[; ;OSCI..c: 40:             break;
+[e $U 139  ]
+"41
+[; ;OSCI..c: 41:         case 6:
+[e :U 147 ]
+"42
+[; ;OSCI..c: 42:             OSCCONbits.IRCF0 = 0;
+[e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
+"43
+[; ;OSCI..c: 43:             OSCCONbits.IRCF1 = 1;
+[e = . . _OSCCONbits 1 2 -> -> 1 `i `uc ]
+"44
+[; ;OSCI..c: 44:             OSCCONbits.IRCF2 = 1;
+[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
+"45
+[; ;OSCI..c: 45:             break;
+[e $U 139  ]
+"46
+[; ;OSCI..c: 46:         case 7:
+[e :U 148 ]
+"47
+[; ;OSCI..c: 47:             OSCCONbits.IRCF0 = 1;
+[e = . . _OSCCONbits 1 1 -> -> 1 `i `uc ]
+"48
+[; ;OSCI..c: 48:             OSCCONbits.IRCF1 = 1;
+[e = . . _OSCCONbits 1 2 -> -> 1 `i `uc ]
+"49
+[; ;OSCI..c: 49:             OSCCONbits.IRCF2 = 1;
+[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
+"50
+[; ;OSCI..c: 50:             break;
+[e $U 139  ]
+"51
+[; ;OSCI..c: 51:         default:
+[e :U 149 ]
+"52
+[; ;OSCI..c: 52:             OSCCONbits.IRCF0 = 0;
+[e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
+"53
+[; ;OSCI..c: 53:             OSCCONbits.IRCF1 = 1;
+[e = . . _OSCCONbits 1 2 -> -> 1 `i `uc ]
+"54
+[; ;OSCI..c: 54:             OSCCONbits.IRCF2 = 1;
+[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
+"55
+[; ;OSCI..c: 55:             break;
+[e $U 139  ]
+"56
+[; ;OSCI..c: 56:     }
 }
-"95
-[; ;Lab5_MASTER.c: 95: void SETUP (void){
-[v _SETUP `(v ~T0 @X0 1 ef ]
-{
-[e :U _SETUP ]
-[f ]
-"96
-[; ;Lab5_MASTER.c: 96:     TRISA=0;
-[e = _TRISA -> -> 0 `i `uc ]
-"97
-[; ;Lab5_MASTER.c: 97:     TRISB=0;
-[e = _TRISB -> -> 0 `i `uc ]
-"98
-[; ;Lab5_MASTER.c: 98:     TRISC=0b000011000;
-[e = _TRISC -> -> 24 `i `uc ]
-"99
-[; ;Lab5_MASTER.c: 99:     TRISD=0;
-[e = _TRISD -> -> 0 `i `uc ]
-"100
-[; ;Lab5_MASTER.c: 100:     TRISE=0;
-[e = _TRISE -> -> 0 `i `uc ]
-"101
-[; ;Lab5_MASTER.c: 101:     PORTA=0;
-[e = _PORTA -> -> 0 `i `uc ]
-"102
-[; ;Lab5_MASTER.c: 102:     PORTB=0;
-[e = _PORTB -> -> 0 `i `uc ]
-"103
-[; ;Lab5_MASTER.c: 103:     PORTC=0;
-[e = _PORTC -> -> 0 `i `uc ]
-"104
-[; ;Lab5_MASTER.c: 104:     PORTD=0;
-[e = _PORTD -> -> 0 `i `uc ]
-"105
-[; ;Lab5_MASTER.c: 105:     PORTE=0;
-[e = _PORTE -> -> 0 `i `uc ]
-"106
-[; ;Lab5_MASTER.c: 106:     I2C_INIT(100000);
-[e ( _I2C_INIT (1 -> -> 100000 `l `ul ]
-"107
-[; ;Lab5_MASTER.c: 107: }
-[e :UE 147 ]
+[e $U 139  ]
+[e :U 140 ]
+[e [\ -> _frec `i , $ -> 0 `i 141
+ , $ -> 1 `i 142
+ , $ -> 2 `i 143
+ , $ -> 3 `i 144
+ , $ -> 4 `i 145
+ , $ -> 5 `i 146
+ , $ -> 6 `i 147
+ , $ -> 7 `i 148
+ 149 ]
+[e :U 139 ]
+"58
+[; ;OSCI..c: 58:     OSCCONbits.SCS = 1;
+[e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
+"59
+[; ;OSCI..c: 59: }
+[e :UE 138 ]
 }
-[a 1C 65 68 67 32 32 67 79 78 84 46 32 32 70 79 84 79 46 0 ]
-[a 2C 46 0 ]
