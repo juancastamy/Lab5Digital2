@@ -11,81 +11,76 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\juan\AppData\Local\Temp\s7g8.o
+$C:\Users\juan\AppData\Local\Temp\s2dk.o
 end_init CODE 0 0 0 3 2
 config CONFIG 0 2007 2007 2 2
 $dist/default/production\Lab5_MASTER.X.production.o
 cinit CODE 0 7EB 7EB 15 2
-text1 CODE 0 C2B C2B 21 2
-text2 CODE 0 CE8 CE8 29 2
-text3 CODE 0 C72 C72 26 2
-text4 CODE 0 BDD BDD 12 2
-text5 CODE 0 C0C C0C 1F 2
-text6 CODE 0 BCB BCB 12 2
-text7 CODE 0 CBF CBF 29 2
-text8 CODE 0 BBC BBC F 2
-text9 CODE 0 C4C C4C 26 2
+text1 CODE 0 BC4 BC4 21 2
+text2 CODE 0 C81 C81 29 2
+text3 CODE 0 C0B C0B 26 2
+text4 CODE 0 B B 12 2
+text5 CODE 0 BA5 BA5 1F 2
+text6 CODE 0 B76 B76 12 2
+text7 CODE 0 C58 C58 29 2
+text8 CODE 0 B67 B67 F 2
+text9 CODE 0 BE5 BE5 26 2
 text10 CODE 0 F12 F12 72 2
-text11 CODE 0 D77 D77 3A 2
-text12 CODE 0 DB1 DB1 44 2
-text13 CODE 0 E50 E50 5C 2
-text14 CODE 0 6F 6F BA 2
+text11 CODE 0 D10 D10 3A 2
+text12 CODE 0 D4A D4A 44 2
+text13 CODE 0 DE9 DE9 5C 2
+text14 CODE 0 1D 1D BA 2
 text15 CODE 0 F84 F84 7C 2
 text16 CODE 0 48A 48A 361 2
-text17 CODE 0 C98 C98 27 2
+text17 CODE 0 C31 C31 27 2
 text18 CODE 0 2AD 2AD 1DD 2
-text19 CODE 0 DF5 DF5 5B 2
-text20 CODE 0 8 8 67 2
-text21 CODE 0 BEF BEF 1D 2
-text22 CODE 0 D3F D3F 38 2
-text23 CODE 0 EAC EAC 66 2
-text24 CODE 0 BA5 BA5 A 2
-text25 CODE 0 B9C B9C 9 2
-text26 CODE 0 B93 B93 9 2
-text27 CODE 0 D11 D11 2E 2
-text28 CODE 0 BAF BAF D 2
-maintext CODE 0 129 129 184 2
+text19 CODE 0 D8E D8E 5B 2
+text20 CODE 0 EAB EAB 67 2
+text21 CODE 0 B88 B88 1D 2
+text22 CODE 0 CD8 CD8 38 2
+text23 CODE 0 E45 E45 66 2
+text24 CODE 0 B50 B50 A 2
+text25 CODE 0 B47 B47 9 2
+text26 CODE 0 B3E B3E 9 2
+text27 CODE 0 CAA CAA 2E 2
+text28 CODE 0 B5A B5A D 2
+maintext CODE 0 D7 D7 1D6 2
 cstackCOMMON COMMON 1 70 70 E 1
 cstackBANK0 BANK0 1 20 20 38 1
-bssBANK0 BANK0 1 58 58 17 1
-bssBANK1 BANK1 1 A0 A0 A 1
-strings STRING 0 800 800 22 2
-clrtext CODE 0 B8B B8B 8 2
+bssBANK0 BANK0 1 58 58 14 1
+bssBANK1 BANK1 1 A0 A0 14 1
+strings STRING 0 800 800 24 2
+clrtext CODE 0 3 3 8 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 6F-6F 1
-RAM AA-EF 1
+RAM 6C-6F 1
+RAM B4-EF 1
 RAM 110-16F 1
 RAM 190-1EF 1
-BANK0 6F-6F 1
-BANK1 AA-EF 1
+BANK0 6C-6F 1
+BANK1 B4-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 3-7 2
-CONST 822-B8A 2
+CONST 824-B3D 2
 CONST 1000-1FFF 2
-ENTRY 3-7 2
-ENTRY 822-B8A 2
+ENTRY 824-B3D 2
 ENTRY 1000-1FFF 2
 IDLOC 2000-2003 2
 STACK 110-16F 1
-CODE 3-7 2
-CODE 822-B8A 2
+CODE 824-B3D 2
 CODE 1000-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
 EEDATA 2100-21FF 2
-STRCODE 3-7 2
-STRCODE 822-B8A 2
+STRCODE 824-B3D 2
 STRCODE 1000-1FFF 2
-STRING 3-7 2
-STRING 822-B8A 2
+STRING 824-B3D 2
 STRING 1000-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -101,133 +96,133 @@ STRING 1000-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Lab5_MASTER.X.production.o
-7EB cinit CODE >1049:C:\Users\juan\AppData\Local\Temp\s7g8.s
-7EB cinit CODE >1052:C:\Users\juan\AppData\Local\Temp\s7g8.s
-7EB cinit CODE >1108:C:\Users\juan\AppData\Local\Temp\s7g8.s
-7EC cinit CODE >1109:C:\Users\juan\AppData\Local\Temp\s7g8.s
-7ED cinit CODE >1110:C:\Users\juan\AppData\Local\Temp\s7g8.s
-7EE cinit CODE >1111:C:\Users\juan\AppData\Local\Temp\s7g8.s
-7EF cinit CODE >1112:C:\Users\juan\AppData\Local\Temp\s7g8.s
-7F4 cinit CODE >1115:C:\Users\juan\AppData\Local\Temp\s7g8.s
-7F5 cinit CODE >1116:C:\Users\juan\AppData\Local\Temp\s7g8.s
-7F6 cinit CODE >1117:C:\Users\juan\AppData\Local\Temp\s7g8.s
-7F7 cinit CODE >1118:C:\Users\juan\AppData\Local\Temp\s7g8.s
-7FC cinit CODE >1124:C:\Users\juan\AppData\Local\Temp\s7g8.s
-7FC cinit CODE >1126:C:\Users\juan\AppData\Local\Temp\s7g8.s
-7FD cinit CODE >1127:C:\Users\juan\AppData\Local\Temp\s7g8.s
-BAF text28 CODE >12:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-BAF text28 CODE >13:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-BBB text28 CODE >14:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D11 text27 CODE >49:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D11 text27 CODE >51:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D16 text27 CODE >52:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D19 text27 CODE >53:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D1E text27 CODE >54:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D27 text27 CODE >55:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D2C text27 CODE >56:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D32 text27 CODE >57:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D35 text27 CODE >58:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D36 text27 CODE >59:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D36 text27 CODE >60:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D39 text27 CODE >61:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D39 text27 CODE >62:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D3A text27 CODE >63:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D3E text27 CODE >64:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-B93 text26 CODE >18:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-B93 text26 CODE >19:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-B98 text26 CODE >20:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-B9B text26 CODE >21:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-B9C text25 CODE >32:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-B9C text25 CODE >33:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-BA1 text25 CODE >34:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-BA4 text25 CODE >35:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-BA5 text24 CODE >41:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-BA5 text24 CODE >42:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-BAA text24 CODE >43:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-BAE text24 CODE >44:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-EAC text23 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-EAC text23 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-EB4 text23 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-EBC text23 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-EBE text23 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-EBF text23 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-EC8 text23 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-ECC text23 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-ED0 text23 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-ED9 text23 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-EEB text23 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-EF9 text23 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-EFA text23 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-F03 text23 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-F09 text23 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-F11 text23 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
-D3F text22 CODE >3:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D3F text22 CODE >4:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D43 text22 CODE >5:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D46 text22 CODE >6:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D73 text22 CODE >7:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D74 text22 CODE >8:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D75 text22 CODE >9:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-D76 text22 CODE >10:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
-BEF text21 CODE >95:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-BEF text21 CODE >96:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-BF2 text21 CODE >97:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-BF3 text21 CODE >98:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-BF5 text21 CODE >99:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-BF6 text21 CODE >100:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-BF7 text21 CODE >101:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-BFA text21 CODE >102:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-BFB text21 CODE >103:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-BFC text21 CODE >104:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-BFD text21 CODE >105:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-BFE text21 CODE >106:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-C0B text21 CODE >107:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-8 text20 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-8 text20 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-9 text20 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-D text20 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-12 text20 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-14 text20 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-18 text20 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-1D text20 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-21 text20 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-23 text20 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-29 text20 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-2B text20 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-2C text20 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-33 text20 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-37 text20 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-3B text20 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-42 text20 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-4C text20 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-52 text20 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-53 text20 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-5A text20 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-60 text20 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-65 text20 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-6A text20 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-6E text20 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
-DF5 text19 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-DF5 text19 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-DF8 text19 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-DFC text19 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E01 text19 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E03 text19 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E07 text19 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E0C text19 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E12 text19 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E14 text19 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E15 text19 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E1C text19 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E20 text19 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E24 text19 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E2E text19 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E34 text19 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E3B text19 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E41 text19 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E46 text19 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E4B text19 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
-E4F text19 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+7EB cinit CODE >1056:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7EB cinit CODE >1059:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7EB cinit CODE >1121:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7EC cinit CODE >1122:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7ED cinit CODE >1123:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7EE cinit CODE >1124:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7EF cinit CODE >1125:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7F4 cinit CODE >1128:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7F5 cinit CODE >1129:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7F6 cinit CODE >1130:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7F7 cinit CODE >1131:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7FC cinit CODE >1137:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7FC cinit CODE >1139:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7FD cinit CODE >1140:C:\Users\juan\AppData\Local\Temp\s2dk.s
+B5A text28 CODE >12:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B5A text28 CODE >13:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B66 text28 CODE >14:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CAA text27 CODE >49:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CAA text27 CODE >51:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CAF text27 CODE >52:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CB2 text27 CODE >53:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CB7 text27 CODE >54:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CC0 text27 CODE >55:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CC5 text27 CODE >56:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CCB text27 CODE >57:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CCE text27 CODE >58:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CCF text27 CODE >59:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CCF text27 CODE >60:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CD2 text27 CODE >61:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CD2 text27 CODE >62:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CD3 text27 CODE >63:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CD7 text27 CODE >64:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B3E text26 CODE >18:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B3E text26 CODE >19:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B43 text26 CODE >20:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B46 text26 CODE >21:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B47 text25 CODE >32:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B47 text25 CODE >33:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B4C text25 CODE >34:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B4F text25 CODE >35:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B50 text24 CODE >41:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B50 text24 CODE >42:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B55 text24 CODE >43:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B59 text24 CODE >44:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+E45 text23 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+E45 text23 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+E4D text23 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+E55 text23 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+E57 text23 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+E58 text23 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+E61 text23 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+E65 text23 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+E69 text23 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+E72 text23 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+E84 text23 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+E92 text23 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+E93 text23 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+E9C text23 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+EA2 text23 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+EAA text23 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\__lldiv.c
+CD8 text22 CODE >3:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CD8 text22 CODE >4:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CDC text22 CODE >5:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+CDF text22 CODE >6:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+D0C text22 CODE >7:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+D0D text22 CODE >8:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+D0E text22 CODE >9:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+D0F text22 CODE >10:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\I2C_MASTER.c
+B88 text21 CODE >106:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+B88 text21 CODE >107:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+B8B text21 CODE >108:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+B8C text21 CODE >109:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+B8E text21 CODE >110:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+B8F text21 CODE >111:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+B90 text21 CODE >112:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+B93 text21 CODE >113:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+B94 text21 CODE >114:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+B95 text21 CODE >115:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+B96 text21 CODE >116:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+B97 text21 CODE >117:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+BA4 text21 CODE >118:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+EAB text20 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EAB text20 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EAC text20 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EB0 text20 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EB5 text20 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EB7 text20 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EBB text20 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EC0 text20 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EC4 text20 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EC6 text20 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+ECC text20 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+ECE text20 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+ECF text20 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+ED6 text20 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EDA text20 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EDE text20 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EE5 text20 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EEF text20 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EF5 text20 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EF6 text20 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+EFD text20 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+F03 text20 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+F08 text20 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+F0D text20 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+F11 text20 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+D8E text19 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+D8E text19 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+D91 text19 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+D95 text19 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+D9A text19 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+D9C text19 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DA0 text19 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DA5 text19 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DAB text19 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DAD text19 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DAE text19 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DB5 text19 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DB9 text19 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DBD text19 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DC7 text19 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DCD text19 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DD4 text19 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DDA text19 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DDF text19 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DE4 text19 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+DE8 text19 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
 2AD text18 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcdiv.c
 2AD text18 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcdiv.c
 2B4 text18 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcdiv.c
@@ -314,17 +309,17 @@ E4F text19 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\c
 47D text18 CODE >182:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcdiv.c
 484 text18 CODE >183:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcdiv.c
 489 text18 CODE >185:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcdiv.c
-C98 text17 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-C99 text17 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-C9B text17 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-CA2 text17 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-CA6 text17 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-CAC text17 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-CAC text17 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-CB3 text17 CODE >55:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-CB5 text17 CODE >56:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-CBA text17 CODE >59:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
-CBE text17 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+C31 text17 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+C32 text17 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+C34 text17 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+C3B text17 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+C3F text17 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+C45 text17 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+C45 text17 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+C4C text17 CODE >55:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+C4E text17 CODE >56:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+C53 text17 CODE >59:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+C57 text17 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
 48A text16 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcmul.c
 48A text16 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcmul.c
 491 text16 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcmul.c
@@ -428,114 +423,114 @@ FEA text15 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\c
 FEF text15 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
 FF4 text15 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
 FFF text15 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fltol.c
-6F text14 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-70 text14 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-79 text14 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-88 text14 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-89 text14 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-91 text14 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-91 text14 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-99 text14 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-A2 text14 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-A6 text14 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-A7 text14 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-AB text14 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-B4 text14 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-BB text14 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-BF text14 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-CD text14 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-D6 text14 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-D6 text14 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-DD text14 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-DF text14 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-E8 text14 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-F2 text14 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-F6 text14 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-FE text14 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-100 text14 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-116 text14 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-11F text14 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-120 text14 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-128 text14 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
-E50 text13 CODE >9:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E51 text13 CODE >10:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E52 text13 CODE >11:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E52 text13 CODE >12:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E55 text13 CODE >13:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E56 text13 CODE >14:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E57 text13 CODE >15:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E58 text13 CODE >16:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E58 text13 CODE >17:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E5B text13 CODE >18:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E5C text13 CODE >19:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E5D text13 CODE >20:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E5E text13 CODE >21:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E5E text13 CODE >22:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E61 text13 CODE >23:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E62 text13 CODE >24:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E63 text13 CODE >25:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E64 text13 CODE >26:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E64 text13 CODE >27:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E67 text13 CODE >28:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E68 text13 CODE >29:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E69 text13 CODE >30:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E6A text13 CODE >31:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E6A text13 CODE >32:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E6D text13 CODE >33:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E6E text13 CODE >34:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E6F text13 CODE >35:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E70 text13 CODE >36:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E70 text13 CODE >37:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E73 text13 CODE >38:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E74 text13 CODE >39:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E75 text13 CODE >40:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E76 text13 CODE >41:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E76 text13 CODE >42:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E79 text13 CODE >43:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E7A text13 CODE >44:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E7B text13 CODE >45:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E7C text13 CODE >46:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E7C text13 CODE >47:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E7F text13 CODE >48:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E80 text13 CODE >49:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E81 text13 CODE >50:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E82 text13 CODE >51:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E82 text13 CODE >52:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E85 text13 CODE >53:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E86 text13 CODE >54:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E87 text13 CODE >55:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-E88 text13 CODE >56:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-EAA text13 CODE >58:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-EAB text13 CODE >59:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
-DB1 text12 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DB1 text12 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DB3 text12 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DB9 text12 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DBB text12 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DBC text12 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DC3 text12 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DC7 text12 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DCB text12 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DD2 text12 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DDC text12 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DE2 text12 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DE3 text12 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DEA text12 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DF0 text12 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-DF4 text12 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
-D77 text11 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-D77 text11 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-D7D text11 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-D7F text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-D80 text11 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-D87 text11 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-D8B text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-D8F text11 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-D99 text11 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-D9F text11 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-DA6 text11 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-DAC text11 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
-DB0 text11 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+1D text14 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+1E text14 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+27 text14 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+36 text14 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+37 text14 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+3F text14 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+3F text14 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+47 text14 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+50 text14 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+54 text14 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+55 text14 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+59 text14 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+62 text14 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+69 text14 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+6D text14 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+7B text14 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+84 text14 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+84 text14 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+8B text14 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+8D text14 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+96 text14 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+A0 text14 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+A4 text14 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+AC text14 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+AE text14 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+C4 text14 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+CD text14 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+CE text14 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+D6 text14 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\xxtofl.c
+DE9 text13 CODE >9:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DEA text13 CODE >10:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DEB text13 CODE >11:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DEB text13 CODE >12:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DEE text13 CODE >13:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DEF text13 CODE >14:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DF0 text13 CODE >15:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DF1 text13 CODE >16:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DF1 text13 CODE >17:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DF4 text13 CODE >18:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DF5 text13 CODE >19:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DF6 text13 CODE >20:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DF7 text13 CODE >21:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DF7 text13 CODE >22:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DFA text13 CODE >23:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DFB text13 CODE >24:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DFC text13 CODE >25:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DFD text13 CODE >26:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+DFD text13 CODE >27:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E00 text13 CODE >28:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E01 text13 CODE >29:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E02 text13 CODE >30:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E03 text13 CODE >31:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E03 text13 CODE >32:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E06 text13 CODE >33:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E07 text13 CODE >34:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E08 text13 CODE >35:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E09 text13 CODE >36:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E09 text13 CODE >37:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E0C text13 CODE >38:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E0D text13 CODE >39:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E0E text13 CODE >40:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E0F text13 CODE >41:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E0F text13 CODE >42:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E12 text13 CODE >43:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E13 text13 CODE >44:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E14 text13 CODE >45:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E15 text13 CODE >46:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E15 text13 CODE >47:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E18 text13 CODE >48:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E19 text13 CODE >49:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E1A text13 CODE >50:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E1B text13 CODE >51:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E1B text13 CODE >52:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E1E text13 CODE >53:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E1F text13 CODE >54:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E20 text13 CODE >55:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E21 text13 CODE >56:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E43 text13 CODE >58:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+E44 text13 CODE >59:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\OSCILADOR.c
+D4A text12 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D4A text12 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D4C text12 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D52 text12 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D54 text12 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D55 text12 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D5C text12 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D60 text12 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D64 text12 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D6B text12 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D75 text12 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D7B text12 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D7C text12 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D83 text12 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D89 text12 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D8D text12 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwdiv.c
+D10 text11 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+D10 text11 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+D16 text11 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+D18 text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+D19 text11 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+D20 text11 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+D24 text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+D28 text11 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+D32 text11 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+D38 text11 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+D3F text11 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+D45 text11 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
+D49 text11 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\lwmod.c
 F12 text10 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
 F15 text10 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
 F19 text10 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
@@ -551,107 +546,115 @@ F70 text10 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\c
 F79 text10 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
 F7F text10 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
 F83 text10 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
-C4C text9 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
-C4F text9 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
-C4F text9 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
-C53 text9 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
-C5E text9 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
-C63 text9 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
-C71 text9 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
-BBC text8 CODE >13:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BBC text8 CODE >14:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BBF text8 CODE >15:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BC7 text8 CODE >16:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BCA text8 CODE >17:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CBF text7 CODE >18:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CBF text7 CODE >19:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CC3 text7 CODE >20:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CC7 text7 CODE >21:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CC8 text7 CODE >22:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CC9 text7 CODE >23:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CCA text7 CODE >24:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CD2 text7 CODE >25:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CD5 text7 CODE >26:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CDB text7 CODE >27:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CDC text7 CODE >28:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CE4 text7 CODE >29:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CE7 text7 CODE >33:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BCB text6 CODE >5:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BCC text6 CODE >6:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BD1 text6 CODE >7:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BD5 text6 CODE >8:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BD6 text6 CODE >9:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BD7 text6 CODE >10:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BDC text6 CODE >11:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-C0C text5 CODE >48:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-C0C text5 CODE >49:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-C12 text5 CODE >50:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-C18 text5 CODE >51:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-C1E text5 CODE >52:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-C24 text5 CODE >53:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-C2A text5 CODE >54:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BDD text4 CODE >35:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BDE text4 CODE >36:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BE3 text4 CODE >37:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BE7 text4 CODE >38:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BE8 text4 CODE >39:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BE9 text4 CODE >40:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-BEE text4 CODE >41:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-C72 text3 CODE >43:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-C72 text3 CODE >44:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-C73 text3 CODE >45:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-C87 text3 CODE >44:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-C97 text3 CODE >46:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
-CE8 text2 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
-CE9 text2 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
-CED text2 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
-CEE text2 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
-CF2 text2 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
-CFB text2 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
-CFF text2 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
-D03 text2 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
-D10 text2 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
-C2B text1 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
-C2C text1 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
-C30 text1 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
-C31 text1 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
-C35 text1 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
-C39 text1 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
-C4B text1 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
-129 maintext CODE >58:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-129 maintext CODE >59:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-12E maintext CODE >60:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-134 maintext CODE >61:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-139 maintext CODE >63:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-142 maintext CODE >65:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-147 maintext CODE >66:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-150 maintext CODE >67:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-15E maintext CODE >68:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-163 maintext CODE >69:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-172 maintext CODE >70:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-1BF maintext CODE >71:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-1E9 maintext CODE >72:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-1FC maintext CODE >73:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-20A maintext CODE >74:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-22C maintext CODE >75:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-23A maintext CODE >76:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-25C maintext CODE >77:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-26A maintext CODE >78:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-276 maintext CODE >79:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-282 maintext CODE >80:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-28E maintext CODE >81:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-29A maintext CODE >82:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-2A0 maintext CODE >83:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
-B8B clrtext CODE >1095:C:\Users\juan\AppData\Local\Temp\s7g8.s
-B8B clrtext CODE >1096:C:\Users\juan\AppData\Local\Temp\s7g8.s
-B8C clrtext CODE >1097:C:\Users\juan\AppData\Local\Temp\s7g8.s
-B8C clrtext CODE >1098:C:\Users\juan\AppData\Local\Temp\s7g8.s
-B8D clrtext CODE >1099:C:\Users\juan\AppData\Local\Temp\s7g8.s
-B8E clrtext CODE >1100:C:\Users\juan\AppData\Local\Temp\s7g8.s
-B8F clrtext CODE >1101:C:\Users\juan\AppData\Local\Temp\s7g8.s
-B90 clrtext CODE >1102:C:\Users\juan\AppData\Local\Temp\s7g8.s
-B91 clrtext CODE >1103:C:\Users\juan\AppData\Local\Temp\s7g8.s
-B92 clrtext CODE >1104:C:\Users\juan\AppData\Local\Temp\s7g8.s
+BE5 text9 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
+BE8 text9 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
+BE8 text9 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
+BEC text9 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
+BF7 text9 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
+BFC text9 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
+C0A text9 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\itoa.c
+B67 text8 CODE >13:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+B67 text8 CODE >14:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+B6A text8 CODE >15:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+B72 text8 CODE >16:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+B75 text8 CODE >17:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C58 text7 CODE >18:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C58 text7 CODE >19:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C5C text7 CODE >20:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C60 text7 CODE >21:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C61 text7 CODE >22:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C62 text7 CODE >23:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C63 text7 CODE >24:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C6B text7 CODE >25:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C6E text7 CODE >26:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C74 text7 CODE >27:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C75 text7 CODE >28:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C7D text7 CODE >29:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C80 text7 CODE >33:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+B76 text6 CODE >5:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+B77 text6 CODE >6:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+B7C text6 CODE >7:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+B80 text6 CODE >8:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+B81 text6 CODE >9:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+B82 text6 CODE >10:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+B87 text6 CODE >11:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+BA5 text5 CODE >48:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+BA5 text5 CODE >49:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+BAB text5 CODE >50:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+BB1 text5 CODE >51:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+BB7 text5 CODE >52:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+BBD text5 CODE >53:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+BC3 text5 CODE >54:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+B text4 CODE >35:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C text4 CODE >36:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+11 text4 CODE >37:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+15 text4 CODE >38:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+16 text4 CODE >39:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+17 text4 CODE >40:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+1C text4 CODE >41:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C0B text3 CODE >43:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C0B text3 CODE >44:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C0C text3 CODE >45:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C20 text3 CODE >44:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C30 text3 CODE >46:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\LCD.c
+C81 text2 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
+C82 text2 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
+C86 text2 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
+C87 text2 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
+C8B text2 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
+C94 text2 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
+C98 text2 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
+C9C text2 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
+CA9 text2 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcat.c
+BC4 text1 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
+BC5 text1 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
+BC9 text1 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
+BCA text1 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
+BCE text1 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
+BD2 text1 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
+BE4 text1 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\strcpy.c
+D7 maintext CODE >60:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+D7 maintext CODE >61:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+DC maintext CODE >62:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+E2 maintext CODE >63:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+E7 maintext CODE >65:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+F0 maintext CODE >67:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+F5 maintext CODE >68:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+FE maintext CODE >69:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+10C maintext CODE >70:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+111 maintext CODE >71:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+120 maintext CODE >72:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+16D maintext CODE >73:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+197 maintext CODE >74:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+1AA maintext CODE >75:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+1B8 maintext CODE >76:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+1DA maintext CODE >77:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+1E8 maintext CODE >78:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+20A maintext CODE >79:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+218 maintext CODE >80:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+224 maintext CODE >81:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+230 maintext CODE >82:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+23C maintext CODE >83:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+248 maintext CODE >84:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+24E maintext CODE >85:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+257 maintext CODE >86:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+260 maintext CODE >87:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+269 maintext CODE >89:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+26E maintext CODE >90:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+277 maintext CODE >91:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+285 maintext CODE >92:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+28A maintext CODE >93:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+299 maintext CODE >94:C:\Users\juan\Documents\GitHub\Lab5Digital2\Lab5_MASTER.X\Lab5_MASTER.c
+3 clrtext CODE >1108:C:\Users\juan\AppData\Local\Temp\s2dk.s
+3 clrtext CODE >1109:C:\Users\juan\AppData\Local\Temp\s2dk.s
+4 clrtext CODE >1110:C:\Users\juan\AppData\Local\Temp\s2dk.s
+4 clrtext CODE >1111:C:\Users\juan\AppData\Local\Temp\s2dk.s
+5 clrtext CODE >1112:C:\Users\juan\AppData\Local\Temp\s2dk.s
+6 clrtext CODE >1113:C:\Users\juan\AppData\Local\Temp\s2dk.s
+7 clrtext CODE >1114:C:\Users\juan\AppData\Local\Temp\s2dk.s
+8 clrtext CODE >1115:C:\Users\juan\AppData\Local\Temp\s2dk.s
+9 clrtext CODE >1116:C:\Users\juan\AppData\Local\Temp\s2dk.s
+A clrtext CODE >1117:C:\Users\juan\AppData\Local\Temp\s2dk.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -668,7 +671,7 @@ ___latbits 2 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 ___awdiv@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 ___lwmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 __Hspace_0 2009 0 ABS 0 - -
-__Hspace_1 AA 0 ABS 0 - -
+__Hspace_1 B4 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
@@ -677,17 +680,17 @@ __size_of_lcd_dwr 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 __size_of_lcd_lat 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 __size_of_lcd_msg 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-_V1 62 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
+_V1 64 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 itoa@base 26 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 _PEIE 5E 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _RCEN 48B 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\juan\AppData\Local\Temp\s7g8.o
-_itoa 1898 0 CODE 0 text9 dist/default/production\Lab5_MASTER.X.production.o
-_main 252 0 CODE 0 maintext dist/default/production\Lab5_MASTER.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\juan\AppData\Local\Temp\s2dk.o
+_itoa 17CA 0 CODE 0 text9 dist/default/production\Lab5_MASTER.X.production.o
+_main 1AE 0 CODE 0 maintext dist/default/production\Lab5_MASTER.X.production.o
 _utoa 1E24 0 CODE 0 text10 dist/default/production\Lab5_MASTER.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
-start 0 0 CODE 0 init C:\Users\juan\AppData\Local\Temp\s7g8.o
+start 0 0 CODE 0 init C:\Users\juan\AppData\Local\Temp\s2dk.o
 ___flmul@aexp 32 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 ___flmul@bexp 33 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 ___flmul@prod 34 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
@@ -709,15 +712,15 @@ __size_of_I2C_INIT 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.
 __Hpowerup 0 0 CODE 0 powerup -
 ___awmod@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 I2C_Master_Read@a 70 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
-__end_of_lcd_ready 19D0 0 CODE 0 text7 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_lcd_ready 1902 0 CODE 0 text7 dist/default/production\Lab5_MASTER.X.production.o
 utoa@c 22 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 utoa@v 20 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\juan\AppData\Local\Temp\s7g8.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\juan\AppData\Local\Temp\s7g8.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\juan\AppData\Local\Temp\s7g8.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\juan\AppData\Local\Temp\s7g8.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\juan\AppData\Local\Temp\s7g8.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\juan\AppData\Local\Temp\s7g8.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\juan\AppData\Local\Temp\s2dk.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\juan\AppData\Local\Temp\s2dk.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\juan\AppData\Local\Temp\s2dk.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\juan\AppData\Local\Temp\s2dk.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\juan\AppData\Local\Temp\s2dk.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\juan\AppData\Local\Temp\s2dk.o
 __size_of_lcd_ready 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 strcat@from 70 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
@@ -726,36 +729,36 @@ __Hfunctab 0 0 ENTRY 0 functab -
 I2C_Master_Read@temp 74 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 ___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
-_lcd_ready 197E 0 CODE 0 text7 dist/default/production\Lab5_MASTER.X.production.o
-__end_of__Umul8_16 197E 0 CODE 0 text17 dist/default/production\Lab5_MASTER.X.production.o
-__end_of_lcd_cmd 17BA 0 CODE 0 text6 dist/default/production\Lab5_MASTER.X.production.o
-__end_of_lcd_dwr 17DE 0 CODE 0 text4 dist/default/production\Lab5_MASTER.X.production.o
-__end_of_lcd_lat 1796 0 CODE 0 text8 dist/default/production\Lab5_MASTER.X.production.o
-__end_of_lcd_msg 1930 0 CODE 0 text3 dist/default/production\Lab5_MASTER.X.production.o
+_lcd_ready 18B0 0 CODE 0 text7 dist/default/production\Lab5_MASTER.X.production.o
+__end_of__Umul8_16 18B0 0 CODE 0 text17 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_lcd_cmd 1710 0 CODE 0 text6 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_lcd_dwr 3A 0 CODE 0 text4 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_lcd_lat 16EC 0 CODE 0 text8 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_lcd_msg 1862 0 CODE 0 text3 dist/default/production\Lab5_MASTER.X.production.o
 I2C_INIT@c 20 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 ___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 __size_of__Umul8_16 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 __size_of_initOsc 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
-_I2C_INIT 1A7E 0 CODE 0 text22 dist/default/production\Lab5_MASTER.X.production.o
+_I2C_INIT 19B0 0 CODE 0 text22 dist/default/production\Lab5_MASTER.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
 ___fldiv@aexp 53 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 ___fldiv@bexp 52 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 ___fldiv@sign 4B 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
-__end_of_I2C_INIT 1AEE 0 CODE 0 text22 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_I2C_INIT 1A20 0 CODE 0 text22 dist/default/production\Lab5_MASTER.X.production.o
 ___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 ___lwmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
-__end_of___awdiv DE 0 CODE 0 text20 dist/default/production\Lab5_MASTER.X.production.o
-__end_of___awmod 1CA0 0 CODE 0 text19 dist/default/production\Lab5_MASTER.X.production.o
-__Umul8_16 1930 0 CODE 0 text17 dist/default/production\Lab5_MASTER.X.production.o
+__end_of___awdiv 1E24 0 CODE 0 text20 dist/default/production\Lab5_MASTER.X.production.o
+__end_of___awmod 1BD2 0 CODE 0 text19 dist/default/production\Lab5_MASTER.X.production.o
+__Umul8_16 1862 0 CODE 0 text17 dist/default/production\Lab5_MASTER.X.production.o
 __end_of___fldiv 914 0 CODE 0 text18 dist/default/production\Lab5_MASTER.X.production.o
 __end_of___flmul FD6 0 CODE 0 text16 dist/default/production\Lab5_MASTER.X.production.o
 __end_of___fltol 2000 0 CODE 0 text15 dist/default/production\Lab5_MASTER.X.production.o
-__end_of___lldiv 1E24 0 CODE 0 text23 dist/default/production\Lab5_MASTER.X.production.o
-__end_of___lwdiv 1BEA 0 CODE 0 text12 dist/default/production\Lab5_MASTER.X.production.o
-__end_of___lwmod 1B62 0 CODE 0 text11 dist/default/production\Lab5_MASTER.X.production.o
+__end_of___lldiv 1D56 0 CODE 0 text23 dist/default/production\Lab5_MASTER.X.production.o
+__end_of___lwdiv 1B1C 0 CODE 0 text12 dist/default/production\Lab5_MASTER.X.production.o
+__end_of___lwmod 1A94 0 CODE 0 text11 dist/default/production\Lab5_MASTER.X.production.o
 __Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\juan\AppData\Local\Temp\s7g8.o
-___stacklo 0 0 ABS 0 - C:\Users\juan\AppData\Local\Temp\s7g8.o
+___stackhi 0 0 ABS 0 - C:\Users\juan\AppData\Local\Temp\s2dk.o
+___stacklo 0 0 ABS 0 - C:\Users\juan\AppData\Local\Temp\s2dk.o
 __size_of_SETUP 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 ___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 ___fldiv@a 3A 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
@@ -769,13 +772,13 @@ ___lldiv@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 __CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 start_initialization FD6 0 CODE 0 cinit dist/default/production\Lab5_MASTER.X.production.o
-_POT1SA A5 0 BANK1 1 bssBANK1 dist/default/production\Lab5_MASTER.X.production.o
-_POT1SB 6A 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
-_POT1SC 65 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
-_PUNTO1 A0 0 BANK1 1 bssBANK1 dist/default/production\Lab5_MASTER.X.production.o
+_POT1SA AF 0 BANK1 1 bssBANK1 dist/default/production\Lab5_MASTER.X.production.o
+_POT1SB 67 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
+_POT1SC AA 0 BANK1 1 bssBANK1 dist/default/production\Lab5_MASTER.X.production.o
+_PUNTO1 A5 0 BANK1 1 bssBANK1 dist/default/production\Lab5_MASTER.X.production.o
 _TRISCbits 87 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 ___lldiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
-clear_ram0 1716 0 CODE 0 clrtext dist/default/production\Lab5_MASTER.X.production.o
+clear_ram0 6 0 CODE 0 clrtext dist/default/production\Lab5_MASTER.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 _SSPADD 93 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _SSPBUF 13 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
@@ -784,15 +787,15 @@ _TRISC3 43B 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _TRISC4 43C 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 utoa@buf 23 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 utoa@val 78 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
-__end_of_initOsc 1D58 0 CODE 0 text13 dist/default/production\Lab5_MASTER.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\juan\AppData\Local\Temp\s7g8.o
+__end_of_initOsc 1C8A 0 CODE 0 text13 dist/default/production\Lab5_MASTER.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\juan\AppData\Local\Temp\s2dk.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
 __Hbank3 0 0 ABS 0 bank3 -
 __Hcinit 1000 0 CODE 0 cinit -
-__end_of_strcat 1A22 0 CODE 0 text2 dist/default/production\Lab5_MASTER.X.production.o
-__end_of_strcpy 1898 0 CODE 0 text1 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_strcat 1954 0 CODE 0 text2 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_strcpy 17CA 0 CODE 0 text1 dist/default/production\Lab5_MASTER.X.production.o
 __Hidloc 0 0 IDLOC 0 idloc -
 __Hstack 0 0 STACK 2 stack -
 __stringbase 101E 0 STRING 0 strings dist/default/production\Lab5_MASTER.X.production.o
@@ -833,70 +836,71 @@ __Lsfr1 0 0 ABS 0 sfr1 -
 __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
+_resultado A0 0 BANK1 1 bssBANK1 dist/default/production\Lab5_MASTER.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-_ADC 64 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
+_ADC 66 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
 _GIE 5F 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _RD2 42 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _RD3 43 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _RD7 47 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 __S0 2009 0 ABS 0 - -
-__S1 AA 0 ABS 0 - -
+__S1 B4 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __CFG_BOR4V$BOR40V 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 utoa@base 7A 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 __CFG_FOSC$INTRC_NOCLKOUT 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
-_I2C_Master_Start 1726 0 CODE 0 text26 dist/default/production\Lab5_MASTER.X.production.o
-_I2C_Master_Write 174A 0 CODE 0 text24 dist/default/production\Lab5_MASTER.X.production.o
+_I2C_Master_Start 167C 0 CODE 0 text26 dist/default/production\Lab5_MASTER.X.production.o
+_I2C_Master_Write 16A0 0 CODE 0 text24 dist/default/production\Lab5_MASTER.X.production.o
 strcat@cp 73 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 strcat@to 72 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
-___xxtofl DE 0 CODE 0 text14 dist/default/production\Lab5_MASTER.X.production.o
+___xxtofl 3A 0 CODE 0 text14 dist/default/production\Lab5_MASTER.X.production.o
 strcpy@cp 73 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 strcpy@to 72 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
-_lcd_init 1818 0 CODE 0 text5 dist/default/production\Lab5_MASTER.X.production.o
+_lcd_init 174A 0 CODE 0 text5 dist/default/production\Lab5_MASTER.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
 ___lldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 __stringtab 1000 0 STRING 0 strings dist/default/production\Lab5_MASTER.X.production.o
-_lcd_cmd 1796 0 CODE 0 text6 dist/default/production\Lab5_MASTER.X.production.o
-_lcd_dwr 17BA 0 CODE 0 text4 dist/default/production\Lab5_MASTER.X.production.o
-_lcd_lat 1778 0 CODE 0 text8 dist/default/production\Lab5_MASTER.X.production.o
-_lcd_msg 18E4 0 CODE 0 text3 dist/default/production\Lab5_MASTER.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\juan\AppData\Local\Temp\s7g8.o
-__end_of___xxtofl 252 0 CODE 0 text14 dist/default/production\Lab5_MASTER.X.production.o
+_lcd_cmd 16EC 0 CODE 0 text6 dist/default/production\Lab5_MASTER.X.production.o
+_lcd_dwr 16 0 CODE 0 text4 dist/default/production\Lab5_MASTER.X.production.o
+_lcd_lat 16CE 0 CODE 0 text8 dist/default/production\Lab5_MASTER.X.production.o
+_lcd_msg 1816 0 CODE 0 text3 dist/default/production\Lab5_MASTER.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\juan\AppData\Local\Temp\s2dk.o
+__end_of___xxtofl 1AE 0 CODE 0 text14 dist/default/production\Lab5_MASTER.X.production.o
 initOsc@frec 72 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __LbssBANK1 0 0 ABS 0 bssBANK1 -
-__end_of_lcd_init 1856 0 CODE 0 text5 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_lcd_init 1788 0 CODE 0 text5 dist/default/production\Lab5_MASTER.X.production.o
 ___awmod@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 __ptext10 1E24 0 CODE 0 text10 dist/default/production\Lab5_MASTER.X.production.o
-__ptext11 1AEE 0 CODE 0 text11 dist/default/production\Lab5_MASTER.X.production.o
-__ptext12 1B62 0 CODE 0 text12 dist/default/production\Lab5_MASTER.X.production.o
-__ptext13 1CA0 0 CODE 0 text13 dist/default/production\Lab5_MASTER.X.production.o
-__ptext14 DE 0 CODE 0 text14 dist/default/production\Lab5_MASTER.X.production.o
+__ptext11 1A20 0 CODE 0 text11 dist/default/production\Lab5_MASTER.X.production.o
+__ptext12 1A94 0 CODE 0 text12 dist/default/production\Lab5_MASTER.X.production.o
+__ptext13 1BD2 0 CODE 0 text13 dist/default/production\Lab5_MASTER.X.production.o
+__ptext14 3A 0 CODE 0 text14 dist/default/production\Lab5_MASTER.X.production.o
 __ptext15 1F08 0 CODE 0 text15 dist/default/production\Lab5_MASTER.X.production.o
 __ptext16 914 0 CODE 0 text16 dist/default/production\Lab5_MASTER.X.production.o
-__ptext17 1930 0 CODE 0 text17 dist/default/production\Lab5_MASTER.X.production.o
+__ptext17 1862 0 CODE 0 text17 dist/default/production\Lab5_MASTER.X.production.o
 __ptext18 55A 0 CODE 0 text18 dist/default/production\Lab5_MASTER.X.production.o
-__ptext19 1BEA 0 CODE 0 text19 dist/default/production\Lab5_MASTER.X.production.o
-__ptext20 10 0 CODE 0 text20 dist/default/production\Lab5_MASTER.X.production.o
-__ptext21 17DE 0 CODE 0 text21 dist/default/production\Lab5_MASTER.X.production.o
-__ptext22 1A7E 0 CODE 0 text22 dist/default/production\Lab5_MASTER.X.production.o
-__ptext23 1D58 0 CODE 0 text23 dist/default/production\Lab5_MASTER.X.production.o
-__ptext24 174A 0 CODE 0 text24 dist/default/production\Lab5_MASTER.X.production.o
-__ptext25 1738 0 CODE 0 text25 dist/default/production\Lab5_MASTER.X.production.o
-__ptext26 1726 0 CODE 0 text26 dist/default/production\Lab5_MASTER.X.production.o
-__ptext27 1A22 0 CODE 0 text27 dist/default/production\Lab5_MASTER.X.production.o
-__ptext28 175E 0 CODE 0 text28 dist/default/production\Lab5_MASTER.X.production.o
-___awdiv 10 0 CODE 0 text20 dist/default/production\Lab5_MASTER.X.production.o
-___awmod 1BEA 0 CODE 0 text19 dist/default/production\Lab5_MASTER.X.production.o
+__ptext19 1B1C 0 CODE 0 text19 dist/default/production\Lab5_MASTER.X.production.o
+__ptext20 1D56 0 CODE 0 text20 dist/default/production\Lab5_MASTER.X.production.o
+__ptext21 1710 0 CODE 0 text21 dist/default/production\Lab5_MASTER.X.production.o
+__ptext22 19B0 0 CODE 0 text22 dist/default/production\Lab5_MASTER.X.production.o
+__ptext23 1C8A 0 CODE 0 text23 dist/default/production\Lab5_MASTER.X.production.o
+__ptext24 16A0 0 CODE 0 text24 dist/default/production\Lab5_MASTER.X.production.o
+__ptext25 168E 0 CODE 0 text25 dist/default/production\Lab5_MASTER.X.production.o
+__ptext26 167C 0 CODE 0 text26 dist/default/production\Lab5_MASTER.X.production.o
+__ptext27 1954 0 CODE 0 text27 dist/default/production\Lab5_MASTER.X.production.o
+__ptext28 16B4 0 CODE 0 text28 dist/default/production\Lab5_MASTER.X.production.o
+___awdiv 1D56 0 CODE 0 text20 dist/default/production\Lab5_MASTER.X.production.o
+___awmod 1B1C 0 CODE 0 text19 dist/default/production\Lab5_MASTER.X.production.o
 ___fldiv 55A 0 CODE 0 text18 dist/default/production\Lab5_MASTER.X.production.o
 ___flmul 914 0 CODE 0 text16 dist/default/production\Lab5_MASTER.X.production.o
 ___fltol 1F08 0 CODE 0 text15 dist/default/production\Lab5_MASTER.X.production.o
-___lldiv 1D58 0 CODE 0 text23 dist/default/production\Lab5_MASTER.X.production.o
-___lwdiv 1B62 0 CODE 0 text12 dist/default/production\Lab5_MASTER.X.production.o
-___lwmod 1AEE 0 CODE 0 text11 dist/default/production\Lab5_MASTER.X.production.o
-__pmaintext 252 0 CODE 0 maintext dist/default/production\Lab5_MASTER.X.production.o
+___lldiv 1C8A 0 CODE 0 text23 dist/default/production\Lab5_MASTER.X.production.o
+___lwdiv 1A94 0 CODE 0 text12 dist/default/production\Lab5_MASTER.X.production.o
+___lwmod 1A20 0 CODE 0 text11 dist/default/production\Lab5_MASTER.X.production.o
+__pmaintext 1AE 0 CODE 0 maintext dist/default/production\Lab5_MASTER.X.production.o
 __Umul8_16@multiplier 78 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 400E 0 CONFIG 0 config -
@@ -905,23 +909,23 @@ __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 ___fldiv@grs 4E 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 ___fldiv@rem 47 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 ___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
-_strcat 19D0 0 CODE 0 text2 dist/default/production\Lab5_MASTER.X.production.o
-_strcpy 1856 0 CODE 0 text1 dist/default/production\Lab5_MASTER.X.production.o
+_strcat 1902 0 CODE 0 text2 dist/default/production\Lab5_MASTER.X.production.o
+_strcpy 1788 0 CODE 0 text1 dist/default/production\Lab5_MASTER.X.production.o
 ___fldiv@new_exp 4C 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 ?_I2C_Master_Read 70 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 _voltaje 58 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
-__end_of_I2C_Master_Read 1A7E 0 CODE 0 text27 dist/default/production\Lab5_MASTER.X.production.o
-__end_of_I2C_Master_Stop 174A 0 CODE 0 text25 dist/default/production\Lab5_MASTER.X.production.o
-__end_of_I2C_Master_Wait 1778 0 CODE 0 text28 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_I2C_Master_Read 19B0 0 CODE 0 text27 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_I2C_Master_Stop 16A0 0 CODE 0 text25 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_I2C_Master_Wait 16CE 0 CODE 0 text28 dist/default/production\Lab5_MASTER.X.production.o
 __end_of__stringtab 1020 0 STRING 0 strings dist/default/production\Lab5_MASTER.X.production.o
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 strcpy@from 70 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
-__end_of_I2C_Master_Start 1738 0 CODE 0 text26 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_I2C_Master_Start 168E 0 CODE 0 text26 dist/default/production\Lab5_MASTER.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
-__end_of_I2C_Master_Write 175E 0 CODE 0 text24 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_I2C_Master_Write 16B4 0 CODE 0 text24 dist/default/production\Lab5_MASTER.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __Umul8_16@product 74 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 __Lend_init 0 0 CODE 0 end_init -
@@ -945,27 +949,27 @@ ___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER
 __Hreset_vec 0 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
 __HbssBANK1 0 0 ABS 0 bssBANK1 -
-_initOsc 1CA0 0 CODE 0 text13 dist/default/production\Lab5_MASTER.X.production.o
+_initOsc 1BD2 0 CODE 0 text13 dist/default/production\Lab5_MASTER.X.production.o
 ___awmod@dividend 7B 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 __size_of_strcat 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 __size_of_strcpy 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _SSPCON2bits 91 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
-__ptext1 1856 0 CODE 0 text1 dist/default/production\Lab5_MASTER.X.production.o
-__ptext2 19D0 0 CODE 0 text2 dist/default/production\Lab5_MASTER.X.production.o
-__ptext3 18E4 0 CODE 0 text3 dist/default/production\Lab5_MASTER.X.production.o
-__ptext4 17BA 0 CODE 0 text4 dist/default/production\Lab5_MASTER.X.production.o
-__ptext5 1818 0 CODE 0 text5 dist/default/production\Lab5_MASTER.X.production.o
-__ptext6 1796 0 CODE 0 text6 dist/default/production\Lab5_MASTER.X.production.o
-__ptext7 197E 0 CODE 0 text7 dist/default/production\Lab5_MASTER.X.production.o
-__ptext8 1778 0 CODE 0 text8 dist/default/production\Lab5_MASTER.X.production.o
-__ptext9 1898 0 CODE 0 text9 dist/default/production\Lab5_MASTER.X.production.o
+__ptext1 1788 0 CODE 0 text1 dist/default/production\Lab5_MASTER.X.production.o
+__ptext2 1902 0 CODE 0 text2 dist/default/production\Lab5_MASTER.X.production.o
+__ptext3 1816 0 CODE 0 text3 dist/default/production\Lab5_MASTER.X.production.o
+__ptext4 16 0 CODE 0 text4 dist/default/production\Lab5_MASTER.X.production.o
+__ptext5 174A 0 CODE 0 text5 dist/default/production\Lab5_MASTER.X.production.o
+__ptext6 16EC 0 CODE 0 text6 dist/default/production\Lab5_MASTER.X.production.o
+__ptext7 18B0 0 CODE 0 text7 dist/default/production\Lab5_MASTER.X.production.o
+__ptext8 16CE 0 CODE 0 text8 dist/default/production\Lab5_MASTER.X.production.o
+__ptext9 17CA 0 CODE 0 text9 dist/default/production\Lab5_MASTER.X.production.o
 ?__Umul8_16 70 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 ?___xxtofl 70 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
-_I2C_Master_Read 1A22 0 CODE 0 text27 dist/default/production\Lab5_MASTER.X.production.o
-_I2C_Master_Stop 1738 0 CODE 0 text25 dist/default/production\Lab5_MASTER.X.production.o
-_I2C_Master_Wait 175E 0 CODE 0 text28 dist/default/production\Lab5_MASTER.X.production.o
+_I2C_Master_Read 1954 0 CODE 0 text27 dist/default/production\Lab5_MASTER.X.production.o
+_I2C_Master_Stop 168E 0 CODE 0 text25 dist/default/production\Lab5_MASTER.X.production.o
+_I2C_Master_Wait 16B4 0 CODE 0 text28 dist/default/production\Lab5_MASTER.X.production.o
 __Umul8_16@word_mpld 76 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
 ___fltol@sign1 43 0 BANK0 1 cstackBANK0 dist/default/production\Lab5_MASTER.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
@@ -979,19 +983,19 @@ __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X
 _SSPCON2 91 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _SSPSTAT 94 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 __Hend_init 6 0 CODE 0 end_init -
-__end_of_itoa 18E4 0 CODE 0 text9 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_itoa 1816 0 CODE 0 text9 dist/default/production\Lab5_MASTER.X.production.o
 __end_of_main 55A 0 CODE 0 maintext dist/default/production\Lab5_MASTER.X.production.o
 __end_of_utoa 1F08 0 CODE 0 text10 dist/default/production\Lab5_MASTER.X.production.o
-__end_of_SETUP 1818 0 CODE 0 text21 dist/default/production\Lab5_MASTER.X.production.o
+__end_of_SETUP 174A 0 CODE 0 text21 dist/default/production\Lab5_MASTER.X.production.o
 _PORTA 5 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _PORTB 6 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _PORTC 7 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _PORTD 8 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _PORTE 9 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
-_POT1A 60 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
-_POT1B 5E 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
-_POT1C 5C 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
-_SETUP 17DE 0 CODE 0 text21 dist/default/production\Lab5_MASTER.X.production.o
+_POT1A 62 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
+_POT1B 60 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
+_POT1C 5E 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
+_SETUP 1710 0 CODE 0 text21 dist/default/production\Lab5_MASTER.X.production.o
 _SSPIE 463 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _SSPIF 63 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 _TRISA 85 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
@@ -1002,6 +1006,7 @@ _TRISE 89 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 __CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
+_contador 5C 0 BANK0 1 bssBANK0 dist/default/production\Lab5_MASTER.X.production.o
 __initialization FD6 0 CODE 0 cinit dist/default/production\Lab5_MASTER.X.production.o
 __CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.production.o
 ___xxtofl@sign 78 0 COMMON 1 cstackCOMMON dist/default/production\Lab5_MASTER.X.production.o
@@ -1038,41 +1043,40 @@ __size_of_I2C_Master_Wait 0 0 ABS 0 - dist/default/production\Lab5_MASTER.X.prod
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7EB FD6 15 2
-text1 0 C2B 1856 21 2
-text2 0 CE8 19D0 29 2
-text3 0 C72 18E4 26 2
-text4 0 BDD 17BA 12 2
-text5 0 C0C 1818 1F 2
-text6 0 BCB 1796 12 2
-text7 0 CBF 197E 29 2
-text8 0 BBC 1778 F 2
-text9 0 C4C 1898 26 2
+text1 0 BC4 1788 21 2
+text2 0 C81 1902 29 2
+text3 0 C0B 1816 26 2
+text4 0 B 16 12 2
+text5 0 BA5 174A 1F 2
+text6 0 B76 16EC 12 2
+text7 0 C58 18B0 29 2
+text8 0 B67 16CE F 2
+text9 0 BE5 17CA 26 2
 text10 0 F12 1E24 72 2
-text11 0 D77 1AEE 3A 2
-text12 0 DB1 1B62 44 2
-text13 0 E50 1CA0 5C 2
-text14 0 6F DE BA 2
+text11 0 D10 1A20 3A 2
+text12 0 D4A 1A94 44 2
+text13 0 DE9 1BD2 5C 2
+text14 0 1D 3A BA 2
 text15 0 F84 1F08 7C 2
 text16 0 48A 914 361 2
-text17 0 C98 1930 27 2
+text17 0 C31 1862 27 2
 text18 0 2AD 55A 1DD 2
-text19 0 DF5 1BEA 5B 2
-text20 0 8 10 67 2
-text21 0 BEF 17DE 1D 2
-text22 0 D3F 1A7E 38 2
-text23 0 EAC 1D58 66 2
-text24 0 BA5 174A A 2
-text25 0 B9C 1738 9 2
-text26 0 B93 1726 9 2
-text27 0 D11 1A22 2E 2
-text28 0 BAF 175E D 2
-maintext 0 129 252 184 2
+text19 0 D8E 1B1C 5B 2
+text20 0 EAB 1D56 67 2
+text21 0 B88 1710 1D 2
+text22 0 CD8 19B0 38 2
+text23 0 E45 1C8A 66 2
+text24 0 B50 16A0 A 2
+text25 0 B47 168E 9 2
+text26 0 B3E 167C 9 2
+text27 0 CAA 1954 2E 2
+text28 0 B5A 16B4 D 2
+maintext 0 D7 1AE 1D6 2
 cstackCOMMON 1 70 70 E 1
-cstackBANK0 1 20 20 4F 1
-reset_vec 0 0 0 3 2
-bssBANK1 1 A0 A0 A 1
-strings 0 800 1000 22 2
-clrtext 0 B8B 1716 8 2
+cstackBANK0 1 20 20 4C 1
+reset_vec 0 0 0 B 2
+bssBANK1 1 A0 A0 14 1
+strings 0 800 1000 24 2
 config 0 2007 400E 2 2
 # OTES Section
 # This section contains data of all the note-psects.  The beginning of the section

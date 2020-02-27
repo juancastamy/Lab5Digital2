@@ -53,6 +53,8 @@ char POT1SA[5];
 char POT1SB[5];
 char POT1SC[5];
 char PUNTO1[5];
+int contador;
+char resultado[5];
 
 void SETUP(void);
 void main(void) {
@@ -81,6 +83,15 @@ void main(void) {
         strcat(POT1SC,PUNTO1);
         lcd_cmd(0xC0); 
         lcd_msg(POT1SC);
+        lcd_msg(" ");
+        lcd_msg(resultado);
+        
+        I2C_Master_Start();         //Start condition
+        I2C_Master_Write(0x31);     //7 bit address + Read
+        contador = I2C_Master_Read(0); //Read + Acknowledge
+        I2C_Master_Stop();          //Stop condition
+        __delay_ms(200);
+        itoa(resultado,contador,10);
         
         
         
